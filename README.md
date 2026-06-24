@@ -24,10 +24,10 @@ Make sure you have Python installed on your system.
    Download the `dpdp_engine.py` file to your machine.
 
 2. **Open your Terminal / Command Prompt** and navigate to the folder where the file is saved:
-```bash
+   ```bash
    cd Path/To/Your/Folder\
 3. **Run the engine:**
-```bash
+   ```bash
    python dpdp_engine.py
 ==================================================
 📊 COMPLIANCE & LIABILITY REPORT
