@@ -31,3 +31,40 @@ def evaluate_breach_protocol(breach_occurred, reported_to_board):
         compliance_report.append("✅ No active breach. Maintain reasonable security safeguards to avoid ₹250 Crore penalties.")
         
     return "\n".join(compliance_report)
+def main():
+    print("==================================================")
+    print("🏛️  STATUTORY CLAUSE ENGINE: India DPDP Act 2023")
+    print("==================================================\n")
+    
+    print("Please answer the following questions to assess your compliance posture:\n")
+    
+    # 1. Gather Inputs
+    try:
+        user_age = int(input("1. What is the minimum age of the users you collect data from? (Enter a number): "))
+    except ValueError:
+        print("Invalid input. Defaulting to age 18.")
+        user_age = 18
+
+    breach_input = input("2. Has a personal data breach occurred? (yes/no): ").strip().lower()
+    breach_occurred = breach_input == 'yes'
+    
+    reported_to_board = False
+    if breach_occurred:
+        reported_input = input("   -> Have you notified the Data Protection Board? (yes/no): ").strip().lower()
+        reported_to_board = reported_input == 'yes'
+
+    # 2. Process Logic
+    print("\n==================================================")
+    print("📊 COMPLIANCE & LIABILITY REPORT")
+    print("==================================================\n")
+    
+    print("--- CHILD DATA ASSESSMENT ---")
+    print(evaluate_child_data_compliance(user_age))
+    print("\n--- BREACH & LIABILITY ASSESSMENT ---")
+    print(evaluate_breach_protocol(breach_occurred, reported_to_board))
+    
+    print("\n==================================================")
+    print("Disclaimer: This is a programmatic prototype and does not constitute formal legal advice.")
+
+if __name__ == "__main__":
+    main()
