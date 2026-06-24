@@ -25,18 +25,10 @@ Make sure you have Python installed on your system.
 
 2. **Open your Terminal / Command Prompt** and navigate to the folder where the file is saved:
 ```bash
-   cd Path/To/Your/Folder
-
+   cd Path/To/Your/Folder\
 3. **Run the engine:**
-
-Bash
+```bash
    python dpdp_engine.py
-(Note: Use python3 dpdp_engine.py if you are on a Mac).
-
-Interact with the CLI: Answer the prompts to generate a real-time compliance posture report.
-
-**📋 Sample Terminal Output**
-Plaintext
 ==================================================
 📊 COMPLIANCE & LIABILITY REPORT
 ==================================================
@@ -46,5 +38,6 @@ Plaintext
    - Action 1: Obtain verifiable parental consent.
    - Action 2: Disable all behavioral monitoring.
    - Liability Risk: Up to ₹200 Crore for non-compliance.
-⚖️ Disclaimer
+
+--- DISCLAIMER ---
 This software is a prototype designed to demonstrate programmatic logic mapping for legal frameworks. It does not constitute formal legal advice.
