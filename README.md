@@ -27,7 +27,7 @@ Make sure you have Python installed on your system.
 ```bash
    cd Path/To/Your/Folder
 
-Run the engine:
+3. **Run the engine:**
 
 Bash
    python dpdp_engine.py
@@ -35,7 +35,7 @@ Bash
 
 Interact with the CLI: Answer the prompts to generate a real-time compliance posture report.
 
-📋 Sample Terminal Output
+**📋 Sample Terminal Output**
 Plaintext
 ==================================================
 📊 COMPLIANCE & LIABILITY REPORT
